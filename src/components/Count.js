@@ -5,9 +5,11 @@ export default function Count() {
     return (
         <>
             <h1>You clicked the button {count} times.</h1>
-            <button onClick={() => setCount(count + 1)}>+1</button>
-            <button onClick={() => setCount(count - 1)}>- 1</button>
-            <button onClick={() => setCount(0)}>Reset</button>
+            <div>
+                <button onClick={() => setCount(count - 1)}>- 1</button>
+                <button onClick={() => setCount(0)}>Reset</button>
+                <button onClick={() => setCount(count + 1)}>+1</button>
+            </div>
         </>
     )
 }
